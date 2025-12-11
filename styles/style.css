@@ -1,13 +1,142 @@
-/* :root {
-    
+:root {
+    --tokyo-pink: #FF6B9D;
+    --tokyo-purple: #ab8dff;
+    --tokyo-cyan: #00D1FF;
+    --tokyo-red: #F72C5E;
+    --tokyo-white: #F8F9FA;
+    --tokyo-black: #05050c;
+    --tokyo-dark: #1A1A2E;
+    --tokyo-light-dark: #26263e;
+    --tokyo-gray: #2D2D44;
+    --tokyo-light-gray: #444461;
+    --light-gray: #E0E0E0;
+    --sakura-light: #FFB7D5;
+
+    --color-text: #FFFFFF;
+    --color-text-light: rgba(255, 255, 255, 0.8);
+
+    --font-primary: 'Poppins', 'Noto Sans JP', sans-serif;
+    --font-japanese: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', sans-serif;
+    --font-display: 'Montserrat', 'Sawarabi Mincho', serif;
 }
- */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
+html, body {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--tokyo-dark);
+    font-family: var(--font-display);
+}
+
+.header {
+    background-color: var(--tokyo-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__image {
+    width: 125px;
+    margin: 25px 0;
+}
+
+.header__navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header__link {
+    font: bold 1.2em var(--font-primary);
+    color: var(--tokyo-white);
+    border: 2.5px solid var(--tokyo-dark);
+    text-decoration: none;
+    background-color: var(--tokyo-gray);
+    padding: 10px 3px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: var(--tokyo-white);
+    padding: 15px;
+}
+
+.navbar__title {
+    color: var(--tokyo-red);
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar__link {
+    font: bold 1em var(--font-primary);
+    color: var(--tokyo-gray);
+    padding: 2px 15px;
+}
+
+.navbar li::before {
+    content: "➦"
+}
+
+.card__item {
+    background-color: var(--tokyo-light-gray);
+}
+
+.card__item-title {
+    color: var(--tokyo-white);
+    font: bold 1.8em var(--font-primary);
+    padding: 10px 15px;
+}
+
+.card__item-description {
+    padding: 10px;
+    line-height: 1.75em;
+    text-indent: 25px;
+    text-align: justify;
+    color: var(--tokyo-black);
+}
+
+.card__item-description a {
+    color: var(--tokyo-purple);
+}
+
+.card__item-description strong {
+    background-color: var(--tokyo-light-dark);
+    color: var(--tokyo-light-gray);
+    padding: 3.5px 5px;
+}
+
+.card__item-figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__item-image {
+    min-width: 250px;
+    max-width: 380px;
+    border-radius: 2rem;
+}
+
+.card__item-caption {
+    font: bold 1.35em var(--font-japanese);
+    color: var(--tokyo-white);
+}
+
+.footer {
+    background-color: var(--tokyo-dark);
+    font: normal 1em var(--font-primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
 }
