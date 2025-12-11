@@ -7,6 +7,7 @@
     --tokyo-light-dark: #26263e;
     --tokyo-gray: #2D2D44;
     --tokyo-light-gray: #444461;
+    --tokyo-gray-transparency: #62627273;
 
     --font-primary: 'Poppins', 'Noto Sans JP', sans-serif;
     --font-japanese: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', sans-serif;
@@ -91,10 +92,12 @@ body {
 }
 
 .card__item-description {
+    font-size: 1em;
     padding: 10px;
     line-height: 1.75em;
     text-indent: 25px;
     text-align: justify;
+    color: var(--tokyo-white);
 }
 
 .card__item-description a {
@@ -103,7 +106,7 @@ body {
 
 .card__item-description strong {
     background-color: var(--tokyo-light-dark);
-    color: var(--tokyo-light-gray);
+    color: var(--tokyo-white);
     padding: 3.5px 5px;
 }
 
@@ -125,10 +128,70 @@ body {
 }
 
 .footer {
-    background-color: var(--tokyo-dark);
+    background-color: var(--tokyo-light-dark);
     font: normal 1em var(--font-primary);
     color: white;
     display: flex;
     justify-content: center;
     padding: 25px;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 480px) {
+    .header__navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--tokyo-gray);
+        padding: 25px 0;
+    }
+
+    .header__link {
+        border: 2px solid var(--tokyo-black);
+        padding: 5px 15px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .card__item-description {
+        font-size: 1.15em;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--tokyo-gray);
+    }
+
+    .header__image {
+        margin: 5px 20px;
+    }
+
+    .header__link {
+        border: none;
+        padding: 5px 15px;
+        border-radius: 0;
+    }
+
+    .card {
+        margin: auto;
+        max-width: 850px;
+        box-shadow: 0 0 12px var(--tokyo-gray-transparency);
+    }
+
+    .card__item-description {
+        font-size: 1.20em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        max-width: 75vw;
+    }
 }
