@@ -4,41 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viagem a Tóquio</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1>Como realizar uma viagem para Tóquio?</h1>
-        <p>Imagine-se caminhando pelas ruas vibrantes de Tóquio, onde a tradição e a modernidade se encontram em cada esquina. Você pode se perder nos mercados de rua, explorar templos antigos ou se maravilhar com os arranha-céus futuristas. Mas como chegar lá? Ah, essa é a parte intrigante. Existem tantas rotas possíveis, cada uma com suas próprias aventuras e desafios. Será que você deve pegar um voo direto ou fazer uma parada estratégica em outra cidade fascinante? A escolha é sua, e cada caminho promete uma experiência única. Então, pronto para embarcar nessa jornada misteriosa? 🌏✈️</p>
-        <nav>
-            <ul>
-                <!-- Adicionar link -->
-                <li><a>Início</a></li>
-                <li><a>Galeria Metropolitana de Tóquio</a></li>
-            </ul>
+    <header class="header">
+        <img src="../assets/logo.png" alt="Logo de Tóquio" class="header__image">
+
+        <nav class="header__navbar">
+            <a href="../index.html" target="_self" class="header__link">Início</a>
+            <a href="gallery.html" target="_self" class="header__link">Saiba mais</a>
+            <a href="trip.html" target="_self" class="header__link">Quero viajar</a>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <p>Como faço para viajar para Tóquio?</p>
-            <img src="../assets/monte-fugi.jpg" alt="Monte Fugi">
-            <p>Para viajar para Tóquio, você precisará de um passaporte válido e um visto de turismo. Cidadãos brasileiros devem solicitar o visto na Embaixada ou Consulado do Japão, apresentando documentos como formulário de solicitação, foto recente, comprovante de renda e passagem de ida e volta. O visto permite uma estadia de até 90 dias no Japão.</p>
-        </section>
-        <section>
-            <p>Custo para viajar para Tóquio</p>
-            <img src="../assets/notas-de-reais.jpg" alt="Notas de Reais">
-            <p>Os custos para viajar a Tóquio podem variar. Passagens aéreas de ida e volta partindo do Brasil custam em média entre R$ 5.576 e R$ 9.43923. Além disso, considere despesas com hospedagem, alimentação e transporte. Uma viagem de 14 dias pode custar aproximadamente R$ 16.830, incluindo passagens, hospedagem em hotéis 3 ou 4 estrelas, alimentação e passeios.</p>
+    <aside class="navbar">
+        <h2 class="navbar__title">Navegação</h2>
+
+        <ul>
+            <li><a href="#title-viajar" target="_self" class="navbar__link">Como realizar uma viagem para Tóquio?</a></li> 
+            <li><a href="#title-viajar2" target="_self" class="navbar__link">Como faço para viajar para Tóquio?</a></li> 
+            <li><a href="#title-custo" target="_self" class="navbar__link">Custo para viajar para Tóquio</a></li>
+            <li><a href="#title-rotas" target="_self" class="navbar__link">Rotas necessárias para se chegar em Tóquio</a></li> 
+            <li><a href="#title-saiba-mais" target="_self" class="navbar__link">Saiba mais</a></li>
+        </ul>
+    </aside>
+
+    <main class="card">
+        <section class="card__item">
+            <h2 id="title-viajar" class="card__item-title"><strong>Como realizar uma viagem para Tóquio?</strong></h2>
+            <p class="card__item-description">Imagine-se caminhando pelas ruas <strong>vibrantes</strong> de Tóquio, onde a tradição e a modernidade se encontram em cada esquina. Você pode se <em>perder nos mercados de rua</em>, <em>explorar templos antigos</em> ou se maravilhar com os <em>arranha-céus futuristas</em>.</p>
+            <p class="card__item-description">Mas como chegar lá? Ah, essa é a parte <strong>intrigante</strong>. Existem tantas rotas possíveis, cada uma com suas próprias aventuras e desafios. Será que você deve pegar um voo direto ou fazer uma parada estratégica em outra cidade fascinante? A <em>escolha é sua</em>, e cada caminho promete uma experiência única. Então, <strong>pronto para embarcar nessa jornada misteriosa</strong>? 🌏✈️</p>
         </section>
 
-        <section>
-            <p>Rotas necessárias para se chegar em Tóquio</p>
-            <img src="../assets/estabelecimento-toquio.jpeg" alt="Um estabelecimento de Tóqui">
-            <p>Não há voos diretos do Brasil para Tóquio, sendo necessário fazer conexões em cidades como Dallas, Paris ou Dubai. As principais companhias aéreas que operam essas rotas incluem Lufthansa, Air France, Emirates e Qatar Airways. Tóquio possui dois aeroportos principais: Haneda (HND) e Narita (NRT). Para mais informações, você pode entrar em contato com: Aeroporto de Haneda (HND)</p>
+        <section class="card__item">
+            <h2 id="title-viajar2" class="card__item-title"><strong>Como faço para viajar para Tóquio?</strong></h2>
+
+            <figure class="card__item-figure">
+                <img src="../assets/monte-fugi.jpg" alt="Monte Fugi" class="card__item-image">
+                <figcaption class="card__item-caption">Monte Fugi</figcaption>
+            </figure>
+
+            <p class="card__item-description">Para viajar para Tóquio, você precisará de um <strong>passaporte válido</strong> e um <strong>visto de turismo</strong>. Cidadãos brasileiros devem solicitar o visto na <em>Embaixada</em> ou <em>Consulado do Japão</em>, apresentando documentos como <strong>formulário de solicitação</strong>, <strong>foto recente</strong>, <strong>comprovante de renda</strong> e <strong>passagem de ida e volta</strong>. O visto permite uma <strong>estadia de até 90 dias</strong> no Japão.</p>
+        </section>
+
+        <section class="card__item">
+            <h2 id="title-custo" class="card__item-title"><strong>Custo para viajar para Tóquio</strong></h2>
+            <p class="card__item-description">Os <strong>custos para viajar a Tóquio</strong> <em>podem variar</em>. Passagens aéreas de ida e volta partindo do Brasil custam em média entre <strong>R$5.576</strong> e <strong>R$9.439</strong>.</p>
+            <p class="card__item-description">Além disso, considere <strong>despesas</strong> com <strong>hospedagem</strong>, <strong>alimentação</strong> e <strong>transporte</strong>. Uma viagem de <em>14 dias</em> pode custar aproximadamente <strong>R$16.830</strong>, incluindo passagens, hospedagem em hotéis 3 ou 4 estrelas, alimentação e passeios.</p>
+        </section>
+
+        <section class="card__item">
+            <h2 id="title-rotas" class="card__item-title"><strong>Rotas necessárias para se chegar em Tóquio</strong></h2>
+
+            <figure class="card__item-figure">
+                <img src="../assets/estabelecimento-toquio.jpeg" alt="Estabelecimento de Tóquio" class="card__item-image">
+                <figcaption class="card__item-caption">Um estabelecimento em Tóquio</figcaption>
+            </figure>
+
+            <p class="card__item-description"><strong>Não há voos diretos do Brasil para Tóquio</strong>, sendo necessário fazer <strong>conexões</strong> em cidades como <em>Dallas</em>, <em>Paris</em> ou <em>Dubai</em>. As principais companhias aéreas que operam essas rotas incluem <em>Lufthansa</em>, <em>Air France</em>, <em>Emirates</em> e <em>Qatar Airways</em>.</p>
+            <p class="card__item-description">Tóquio possui dois aeroportos principais: <em>Haneda (HND)</em> e <em>Narita (NRT)</em>. Para mais informações, você pode entrar em contato com: Aeroporto de <em>Haneda (HND)</em></p>
+        </section>
+
+        <section class="card__item">
+            <h2 id="title-saiba-mais" class="card__item-title">Saiba mais</h2>
+            <p class="card__item-description">Se você se interessou pelo assunto, considere <a href="https://www.japan.travel/pt/guide/japan-on-a-budget/" target="_blank">Ver mais</a> sobre esse assunto.</p>
         </section>
     </main>
 
-    <footer>
-        <p>© 2024 Esperamos você aqui. Até breve!</p>
+    <footer class="footer">
+        <p>&copy; 2024 Tóquio - A Cidade do Futuro</p>
     </footer>
 </body>
 </html>

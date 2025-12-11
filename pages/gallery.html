@@ -4,41 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Tóquio</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1>Galeria de Tóquio</h1>
-        <p1>  A Galeria de Arte Metropolitana de Tóquio é um dos principais museus de arte da cidade,
-             oferecendo uma rica coleção de obras japonesas e internacionais. Localizada no coração 
-             de Ueno, um dos distritos culturais mais importantes da capital japonesa, a galeria é um 
-             destino imperdível para os amantes da arte. Vamos conhecer mais?</p1>
-        <nav>
-            <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Como viajar para Tóquio?</a></li>
-            </ul>
+    <header class="header">
+        <img src="../assets/logo.png" alt="Logo de Tóquio" class="header__image">
+
+        <nav class="header__navbar">
+            <a href="../index.html" target="_self" class="header__link">Início</a>
+            <a href="gallery.html" target="_self" class="header__link">Saíba mais</a>
+            <a href="trip.html" target="_self" class="header__link">Quero viajar</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>História da Galeria de Arte Metropolitana</h2>
-            <p> A Galeria Metropolitana de Arte de Tóquio, localizada no coração do Parque Ueno, é um dos principais centros culturais da cidade. Fundada em 1926, a galeria é conhecida por suas exposições temporárias que abrangem uma vasta gama de estilos e períodos artísticos, desde a arte tradicional japonesa até a arte contemporânea internacional. O edifício moderno e espaçoso oferece um ambiente ideal para apreciar obras de arte, proporcionando uma experiência enriquecedora para todos os visitantes.</p>
 
-            <p><strong>Exterior da Galeria</strong></p>
-            <img src="../assets/galeria-metropolitana.jpg" alt="Galeria Metropolitana de Arte em Tóquio">
+    <main class="card">
+        <section class="card__item">
+            <h1 class="card__item-title">Galeria de Tóquio</h1>
+
+            <p class="card__item-description">A <strong><a href="https://en.wikipedia.org/wiki/Tokyo_Metropolitan_Art_Museum" target="_blank">Galeria de Arte Metropolitana de Tóquio</a></strong> é um dos <strong>principais museus</strong> de arte da cidade, oferecendo uma rica coleção de obras japonesas e internacionais.</p>
+            <p class="card__item-description"><strong>Localizada no coração de Ueno</strong>, um dos <strong>distritos culturais</strong> mais importantes da capital japonesa, a galeria é um destino imperdível para os amantes da arte. <strong>Vamos conhecer mais?</strong></p>
         </section>
 
-        <section>
-            <h2>Perpectiva histórica, e cultural da Galeria</h2>
-            <p>Além das exposições, a Galeria Metropolitana de Arte de Tóquio também promove eventos culturais, workshops e palestras, tornando-se um ponto de encontro para artistas e entusiastas da arte. Com sua localização privilegiada e programação diversificada, a galeria desempenha um papel crucial na promoção da arte e cultura em Tóquio, atraindo tanto moradores locais quanto turistas de todo o mundo. Visitar a galeria é uma oportunidade única para mergulhar na rica tapeçaria cultural da cidade.</p>
+        <section class="card__item">
+            <h2 class="card__item-title"><strong>História da Galeria de Arte Metropolitana</strong></h2>
 
-            <p><strong>Interior da Galeria</strong></p>
-            <img src="../assets/arte-galeria.jpg" alt="Arte em Tóquio">
+            <figure class="card__item-figure">
+                <img src="../assets/galeria-metropolitana.jpg" alt="Galeria Metropolitana de Arte em Tóquio" class="card__item-image">
+                <figcaption class="card__item-caption">Galeria Metropolitana de Arte de Tóquio</figcaption>
+            </figure>
+
+            <p class="card__item-description"><strong>A <a href="https://en.wikipedia.org/wiki/Tokyo_Metropolitan_Art_Museum" target="_blank">Galeria Metropolitana de Arte de Tóquio</a></strong>, localizada no coração do <strong>Parque Ueno</strong>, é um dos principais centros culturais da cidade.</p>
+            <p class="card__item-description"><em>Fundada em 1926</em>, a galeria é conhecida por suas exposições temporárias que abrangem uma vasta gama de estilos e períodos artísticos, desde a arte tradicional japonesa até a arte <strong>contemporânea internacional</strong>. O edifício moderno e espaçoso oferece um ambiente ideal para apreciar obras de arte, proporcionando uma experiência enriquecedora para todos os visitantes.</p>
+
+        </section>
+
+        <section class="card__item">
+            <h2 class="card__item-title"><strong>Perpectiva histórica, e cultural da Galeria</strong></h2>
+            <p class="card__item-description">Além das exposições, a <strong>Galeria Metropolitana de Arte de Tóquio</strong> também promove <em>eventos culturais</em>, <em>workshops</em> e <em>palestras</em>, tornando-se um ponto de encontro para artistas e entusiastas da arte.</p>
+            <p class="card__item-description">Com sua <strong>localização privilegiada</strong> e <strong>programação diversificada</strong>, a galeria desempenha um papel crucial na promoção da arte e cultura em <em>Tóquio</em>, atraindo tanto moradores locais quanto turistas de todo o mundo. Visitar a galeria é uma oportunidade única para mergulhar na rica tapeçaria cultural da cidade.</p>
         </section>
     </main>
 
-    <footer>
-        <p2>© 2024 Tóquio - O Futuro, é aqui!o</p2>
+    <footer class="footer">
+        <p>&copy; 2024 Tóquio - A Cidade do Futuro</p>
     </footer>
 </body>
 </html>

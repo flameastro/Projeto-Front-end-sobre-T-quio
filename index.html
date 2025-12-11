@@ -6,69 +6,113 @@
     <title>Tóquio - A cidade do futuro!</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="assets/bandeira-toquio.jpg" alt="Bandeira de Tóquio">
+    <header class="header">
+        <img src="assets/logo.png" alt="Logo de Tóquio" class="header__image">
 
-        <nav>
-            <ul><a href="pages/gallery.html" target="_self">Galeria de Arte Metropolitana de Tóquio</a>
-            <ul><a href="pages/trip.html" target="_self">Como viajar para Tóquio?</a></ul>
+        <nav class="header__navbar">
+            <a href="index.html" target="_self" class="header__link">Início</a>
+            <a href="pages/gallery.html" target="_self" class="header__link">Saiba mais</a>
+            <a href="pages/trip.html" target="_self" class="header__link">Quero viajar</a>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <img src="assets/toquio.jpeg" alt="Bem vindo a Tóquio">
-            <p><strong>Tóquio</strong>, conhecida em japonês como <em>東京 (Tōkyō)</em>, que significa <em>“capital do leste”</em>, é a capital do Japão e uma das <em>47 províncias do país</em>. Localizada na ilha de <em>Honshu</em>, a maior do arquipélago japonês, Tóquio é uma <strong>metrópole vibrante e densamente povoada</strong>, com uma população de cerca de <strong>14 milhões de habitantes na cidade e mais de 37 milhões na região metropolitana</strong>, tornando-a a área urbana mais <strong>populosa do mundo</strong>. Mas, você deve se perguntar: <em>"Qual a importância de Tóquio para o mundo?"</em> Tóquio é um centro global de cultura, tecnologia, e economia. A cidade combina harmoniosamente tradições milenares com a modernidade, oferecendo uma experiência única aos visitantes. Entre os pontos turísticos mais famosos estão a <em>Torre de Tóquio</em>, o <em>Templo Senso-ji</em>, e o cruzamento de <em>Shibuya</em>, conhecido por ser um dos mais movimentados do mundo.</p>
+    <aside class="navbar">
+        <h2 class="navbar__title">Navegação</h2>
+        <ul>
+            <li><a href="#title-toquio" target="_self" class="navbar__link">Tóquio - Introdução</a></li> 
+            <li><a href="#title-templo-senso-ji" target="_self" class="navbar__link">Templo Senso-ji</a></li> 
+            <li><a href="#title-akihabara" target="_self" class="navbar__link">Akihabara</a></li> 
+            <li><a href="#title-shibuya" target="_self" class="navbar__link">Shibuya</a></li>
+            <li><a href="#title-torre-de-toquio" target="_self" class="navbar__link">Torre de Tóquio</a></li> 
+            <li><a href="#title-parque-ueno" target="_self" class="navbar__link">Parque Ueno</a></li>
+        </ul>
+    </aside>
 
-            <ul> 
-                <p>Tópicos abordados na Página</p>
+    <main class="card">
+        <section class="card__item">
+            <h1 id="title-toquio" class="card__item-title"><strong>Tóquio</strong></h1>
 
-                <!-- Colocar link -->
-                <li>I-Templo Senso-ji</li> 
-                <li>II-Akihabara</li> 
-                <li>III-Shibuya</li>
-                <li>IV-A Torre de Tóquio</li> 
-                <li>V-Parque Ueno</li>
-            </ul>
+            <figure class="card__item-figure">
+                <img src="assets/toquio.jpeg" alt="Retrato de Tóquio" class="card__item-image">
+                <figcaption class="card__item-caption">Retrato de Tóquio</figcaption>
+            </figure>
 
-        </section>
-        <section>
-            <p><strong>I-Templo Senso-ji</strong></p>
-            <img src="assets/templo-senso-ji.jpg" alt="Imagem do Templo Senso-ji">
-            <p>O Templo Senso-ji, localizado em Asakusa, é o templo budista mais antigo de Tóquio e um dos mais importantes. Fundado em 645 d.C., é dedicado à deusa Kannon. O complexo do templo é um local vibrante, com a famosa porta Kaminarimon, que leva à Nakamise-dori, uma rua cheia de lojas tradicionais que vendem lembranças e comidas típicas. A atmosfera histórica e espiritual do Senso-ji oferece uma experiência única de imersão na cultura japonesa.</p>
-        </section>
-
-        <section>
-            <p><strong>II-Akihabara</strong></p>
-            <img src="assets/ii-akihabara.jpg" alt="Akihabara: O Paraíso dos Animes e Tecnologia">
-            <p> Akihabara, também conhecida como “Cidade Elétrica”, é o epicentro da cultura otaku e da tecnologia em Tóquio. Este bairro é famoso por suas lojas de eletrônicos, mangás, animes e jogos. Akihabara é um verdadeiro paraíso para os fãs de animes, com inúmeras lojas especializadas, cafés temáticos e eventos relacionados. Além disso, a vibe futurista do bairro, com seus letreiros de neon e arranha-céus, faz com que os visitantes se sintam em um cenário de ficção científica.</p>
+            <p class="card__item-description"><strong><a href="https://pt.wikipedia.org/wiki/T%C3%B3quio" target="_blank">Tóquio</a></strong>, conhecida em japonês como <em>東京 (Tōkyō)</em>, que significa <em>“capital do leste”</em>, é a capital do Japão e uma das <em>47 províncias do país</em>. Localizada na ilha de <em>Honshu</em>, a maior do arquipélago japonês, Tóquio é uma <strong>metrópole vibrante e densamente povoada</strong>, com uma população de cerca de <strong>14 milhões de habitantes na cidade e mais de 37 milhões na região metropolitana</strong>, tornando-a a área urbana mais <strong>populosa do mundo</strong>.</p>
+            <p class="card__item-description">Mas, você deve se perguntar: <em>"Qual a importância de Tóquio para o mundo?"</em> Tóquio é um centro global de cultura, tecnologia, e economia. A cidade combina harmoniosamente tradições milenares com a modernidade, oferecendo uma experiência única aos visitantes. Entre os pontos turísticos mais famosos estão a <em>Torre de Tóquio</em>, o <em>Templo Senso-ji</em>, e o cruzamento de <em>Shibuya</em>, conhecido por ser um dos mais movimentados do mundo.</p>
         </section>
 
-        <section>
-            <p><strong>III-Shibuya</strong></p>
-            <img src="assets/iii-shibuya.jpg" alt="Shibuya: e o Cruzamento Mais Movimentado do Mundo">
-            <p> Shibuya e o Cruzamento Mais Movimentado do Mundo
-                Shibuya é um dos bairros mais icônicos de Tóquio, conhecido pelo seu famoso cruzamento, onde milhares de pessoas atravessam ao mesmo tempo em todas as direções. Este cruzamento é um símbolo da energia e dinamismo da cidade. Além disso, Shibuya é um centro de moda e entretenimento, com inúmeras lojas, restaurantes e clubes. A estátua de Hachiko, o leal cão Akita, é outro ponto de interesse popular, localizada bem em frente à estação de Shibuya.</p>
+        <section class="card__item">
+            <h2 id="title-templo-senso-ji" class="card__item-title"><strong>Templo Senso-ji</strong></h2>
+
+            <figure class="card__item-figure">
+                <img src="assets/templo-senso-ji.jpg" alt="O Templo Senso-ji" class="card__item-image">
+                <figcaption class="card__item-caption">Templo Sanso-Ji</figcaption>
+            </figure>
+
+            <p class="card__item-description">O <strong><a href="https://pt.wikipedia.org/wiki/Templo_Sensoji" target="_blank">Templo Senso-ji</a></strong>, localizado em <em>Asakusa</em>, é o templo <strong>budista mais antigo de Tóquio</strong> e um dos mais importantes. Fundado em <em>645 d.C.</em>, é dedicado à deusa <em><a href="https://pt.wikipedia.org/wiki/Kuan_Yin" target="_blank">Kannon</a></em>.</p>
+            <p class="card__item-description">O complexo do templo é um local vibrante, com a famosa porta <em>Kaminarimon</em>, que leva à <em>Nakamise-dori</em>, uma rua cheia de lojas tradicionais que vendem <strong>lembranças e comidas típicas</strong>. A atmosfera histórica e espiritual do <em>Senso-ji</em> oferece uma experiência única de imersão na cultura japonesa.</p>
         </section>
 
-        <section>
-            <p><strong>IV-A Torre de Tóquio</strong></p>
-            <img src="assets/torre-de-toquio.jpg" alt="Torre de Tóquio">
-            <p> A Torre de Tóquio, inspirada na Torre Eiffel, é um dos marcos mais reconhecíveis da cidade. Com 333 metros de altura, oferece vistas panorâmicas incríveis de Tóquio e, em dias claros, é possível avistar o Monte Fuji. A torre também abriga museus, restaurantes e um aquário. À noite, a Torre de Tóquio é iluminada, proporcionando um espetáculo visual deslumbrante que destaca a beleza da cidade.
-            </p>
+        <section class="card__item">
+            <h2 id="title-akihabara" class="card__item-title"><strong>Akihabara</strong></h2>
+
+            <figure class="card__item-figure">
+                <img src="assets/akihabara.jpg" alt="A cidade Akihabara" class="card__item-image">
+                <figcaption class="card__item-caption">Cidade Akihabara</figcaption>
+            </figure>
+
+            <p class="card__item-description"><strong><a href="https://pt.wikipedia.org/wiki/Akihabara" target="_blank">Akihabara</a></strong>, também conhecida como <em>“Cidade Elétrica”</em>, é o epicentro da cultura <em>otaku</em> e da tecnologia em Tóquio. </p>
+            <p class="card__item-description">Este bairro é famoso por suas lojas de <strong>eletrônicos, mangás, animes e jogos</strong>. <em>Akihabara</em> é um verdadeiro paraíso para os <strong>fãs de animes</strong>, com <strong>inúmeras lojas especializadas</strong>, <strong>cafés temáticos</strong> e eventos relacionados. </p>
+            <p class="card__item-description">Além disso, a vibe futurista do bairro, com seus letreiros de <em>neon</em> e arranha-céus, faz com que os visitantes se sintam em um cenário de <strong>ficção científica</strong>.</p>
         </section>
 
-        <section>
-            <p><strong>V-O Parque Ueno</strong></p>
-            <img src="assets/parque-ueno.jpg" alt="O Parque Ueno">
-            <p>O Parque Ueno é um dos maiores e mais populares parques de Tóquio. É famoso por suas cerejeiras, que atraem milhares de visitantes durante a temporada de sakura (floração das cerejeiras). O parque também abriga vários museus importantes, como o Museu Nacional de Tóquio, o Museu Nacional de Arte Ocidental e o Museu de Ciências. Além disso, o Zoológico de Ueno, o mais antigo do Japão, está localizado dentro do parque, oferecendo uma variedade de atrações para todas as idades.</p>
+        <section class="card__item">
+            <h2 id="title-shibuya" class="card__item-title"><strong>Shibuya</strong></h2>
+
+            <figure class="card__item-figure">
+                <img src="assets/shibuya.jpg" alt="O bairro Shibuya" class="card__item-image">
+                <figcaption class="card__item-caption">Bairro Shibuya</figcaption>
+            </figure>
+
+            <p class="card__item-description"><strong><a href="https://pt.wikipedia.org/wiki/Shibuya" target="_blank">Shibuya</a></strong> é um dos bairros mais <strong>icônicos</strong> de Tóquio, conhecido pelo seu famoso <strong>cruzamento</strong>, onde milhares de pessoas atravessam ao mesmo tempo em todas as direções. Este cruzamento é um <strong>símbolo da energia</strong> e <strong>dinamismo</strong> da cidade.</p>
+            <p class="card__item-description">Além disso, <em>Shibuya</em> é um centro de moda e entretenimento, com inúmeras lojas, restaurantes e clubes. A estátua de <em>Hachiko</em>, o <em>leal cão Akita</em>, é outro ponto de interesse popular, localizada bem em frente à estação de <em>Shibuya</em>.</p>
+        </section>
+
+        <section class="card__item">
+            <h2 id="title-torre-de-toquio" class="card__item-title"><strong>A Torre de Tóquio</strong></h2>
+
+            <figure class="card__item-figure">
+                <img src="assets/torre-de-toquio.jpg" alt="A Torre de Tóquio" class="card__item-image">
+                <figcaption class="card__item-caption">Torre de Tóquio</figcaption>
+            </figure>
+
+            <p class="card__item-description">A <strong><a href="https://pt.wikipedia.org/wiki/Torre_de_T%C3%B3quio" target="_blank">Torre de Tóquio</a></strong>, inspirada na <em><a href="https://pt.wikipedia.org/wiki/Torre_Eiffel" target="_blank">Torre Eiffel</a></em>, é um dos marcos mais reconhecíveis da cidade. Com <strong>333 metros de altura</strong>, oferece vistas panorâmicas incríveis de Tóquio e, em dias claros, é possível avistar o <em>Monte Fuji</em>.</p>
+            <p class="card__item-description">A <strong><a href="https://pt.wikipedia.org/wiki/Torre_de_T%C3%B3quio" target="_blank">Torre de Tóquio</a></strong>, inspirada na <em><a href="https://pt.wikipedia.org/wiki/Torre_Eiffel" target="_blank">Torre Eiffel</a></em>, é um dos marcos mais reconhecíveis da cidade. Com <strong>333 metros de altura</strong>, oferece vistas panorâmicas incríveis de Tóquio e, em dias claros, é possível avistar o <em>Monte Fuji</em>.</p>
+            <p class="card__item-description">A torre também abriga museus, restaurantes e um aquário. À noite, a <strong>Torre de Tóquio</strong> é iluminada, proporcionando um espetáculo visual deslumbrante que destaca a beleza da cidade.</p>
+        </section>
+
+        <section class="card__item">
+            <h2 id="title-parque-ueno" class="card__item-title"><strong>O Parque Ueno</strong></h2>
+
+            <figure class="card__item-figure">
+                <img src="assets/parque-ueno.jpg" alt="O Parque Ueno" class="card__item-image">
+                <figcaption class="card__item-caption">Parque Ueno</figcaption>
+            </figure>
+
+            <p class="card__item-description">O <strong><a href="https://pt.wikipedia.org/wiki/Parque_Ueno" target="_blank">Parque Ueno</a></strong> é um dos maiores e mais populares parques de Tóquio. É famoso por suas <strong>cerejeiras</strong>, que atraem milhares de visitantes durante a temporada de <em><a href="https://pt.wikipedia.org/wiki/Sakura_(cerejeira)" target="_blank">sakura</a></em> (floração das cerejeiras).</p>
+            <p class="card__item-description">O parque também abriga vários museus importantes, como o <em><a href="https://pt.wikipedia.org/wiki/Museu_Nacional_de_T%C3%B3quio" target="_blank">Museu Nacional de Tóquio</a></em>, o <em><a href="https://en.wikipedia.org/wiki/National_Museum_of_Western_Art" target="_blank">Museu Nacional de Arte Ocidental</a></em> e o <em><a href="https://pt.wikipedia.org/wiki/Museu_Nacional_de_Ci%C3%AAncia_do_Jap%C3%A3o" target="_blank">Museu de Ciências</a></em>. Além disso, o <em><a href="https://pt.wikipedia.org/wiki/Zool%C3%B3gico_de_Ueno" target="_blank">Zoológico de Ueno</a></em>, o mais <strong>antigo</strong> do Japão, está localizado dentro do parque, oferecendo uma variedade de atrações para todas as idades.</p>
         </section>
     </main>
 
-    <footer>
-        <p>© 2024 Tóquio - A Cidade do Futuro</p>
+    <footer class="footer">
+        <p>&copy; 2024 Tóquio - A Cidade do Futuro</p>
     </footer>
 </body>
 </html>
