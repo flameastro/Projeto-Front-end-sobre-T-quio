@@ -1,6 +1,8 @@
 :root {
     --tokyo-purple: #ab8dff;
+    --tokyo-purple-hover: #7e5cdd;
     --tokyo-red: #F72C5E;
+    --tokyo-red-hover: #ae0c35;
     --tokyo-white: #F8F9FA;
     --tokyo-black: #05050c;
     --tokyo-dark: #1A1A2E;
@@ -56,6 +58,12 @@ body {
     background-color: var(--tokyo-gray);
     padding: 10px 3px;
     text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+    color: var(--tokyo-red-hover);
 }
 
 .navbar {
@@ -74,7 +82,13 @@ body {
 .navbar__link {
     font: bold 1em var(--font-primary);
     color: var(--tokyo-gray);
+    text-decoration: none;
     padding: 2px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__link:hover {
+    color: var(--tokyo-black);
 }
 
 .navbar li::before {
@@ -102,12 +116,21 @@ body {
 
 .card__item-description a {
     color: var(--tokyo-purple);
+    transition: all 0.3s ease-in-out;
+}
+
+.card__item-description a:hover {
+    color: var(--tokyo-purple-hover);
 }
 
 .card__item-description strong {
     background-color: var(--tokyo-light-dark);
     color: var(--tokyo-white);
     padding: 3.5px 5px;
+}
+
+.card__item-description em {
+    text-decoration: underline wavy black 1.5px;
 }
 
 .card__item-figure {
