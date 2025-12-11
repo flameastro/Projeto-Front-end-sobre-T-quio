@@ -1,7 +1,5 @@
 :root {
-    --tokyo-pink: #FF6B9D;
     --tokyo-purple: #ab8dff;
-    --tokyo-cyan: #00D1FF;
     --tokyo-red: #F72C5E;
     --tokyo-white: #F8F9FA;
     --tokyo-black: #05050c;
@@ -9,11 +7,6 @@
     --tokyo-light-dark: #26263e;
     --tokyo-gray: #2D2D44;
     --tokyo-light-gray: #444461;
-    --light-gray: #E0E0E0;
-    --sakura-light: #FFB7D5;
-
-    --color-text: #FFFFFF;
-    --color-text-light: rgba(255, 255, 255, 0.8);
 
     --font-primary: 'Poppins', 'Noto Sans JP', sans-serif;
     --font-japanese: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', sans-serif;
@@ -56,7 +49,7 @@ body {
 
 .header__link {
     font: bold 1.2em var(--font-primary);
-    color: var(--tokyo-white);
+    color: var(--tokyo-red);
     border: 2.5px solid var(--tokyo-dark);
     text-decoration: none;
     background-color: var(--tokyo-gray);
@@ -102,7 +95,6 @@ body {
     line-height: 1.75em;
     text-indent: 25px;
     text-align: justify;
-    color: var(--tokyo-black);
 }
 
 .card__item-description a {
